@@ -1,0 +1,32 @@
+.quiz {
+  text-align: left;
+
+  .question {
+    padding: 10px 5px;
+  }
+
+  .quiz-choice {
+    padding: 5px 0;
+
+    .text {
+      border: 1px solid lightgray;
+      border-radius: 5px;
+      padding: 20px;
+      cursor: pointer;
+
+      &.selected {
+        background-color: lightcyan;
+
+        &.incorrect {
+          background-color: lightpink;
+        }
+
+      }
+
+      &.correct {
+        background-color: lightgreen;
+      }
+
+    }
+  }
+}

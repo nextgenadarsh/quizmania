@@ -1,13 +1,17 @@
-import React from "react";
-import QuizGame from "./pages/quiz-game";
+import './App.scss';
+import QuizGame from './modules/quiz-game';
 
-import "./style.css";
-
-export default function App() {
+function App() {
   return (
-    <div>
-      <h1 className="app-header">Quiz Mania!</h1>
-      <QuizGame />
+    <div className="quiz-mania">
+      <header className="header">
+        Quiz Mania
+      </header>
+      <div className="content">
+        <QuizGame />
+      </div>
     </div>
   );
 }
+
+export default App;

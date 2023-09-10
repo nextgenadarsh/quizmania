@@ -1,0 +1,48 @@
+.quiz-game {
+  text-align: left;
+
+  .tags-container {
+    .tag {
+      padding: 2px 5px;
+      margin: 2px;
+      border-radius: 5px;
+      cursor: pointer;
+
+      &.selected {
+        background-color: steelblue;
+      }
+    }
+    button {
+      cursor: pointer;
+      background-color: aqua;
+      border-radius: 8px;
+    }
+  }
+  .controls {
+    display: flex;
+    justify-content: right;
+
+    button {
+      height: 20px;
+      cursor: pointer;
+
+      :hover {
+        background-color: lightblue;
+      }
+    }
+  }
+
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+
+    button {
+      cursor: pointer;
+      min-width: 100px;
+      padding: 5px;
+      font-size: 12pt;
+      font-weight: bold;
+    }
+  }
+}
